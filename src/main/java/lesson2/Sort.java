@@ -6,7 +6,7 @@ import java.util.List;
 public class Sort {
 
 
-    public static List<Notebook> selection (List<Notebook> arr) {
+    public static List<Notebook> selection(List<Notebook> arr) {
         int min;
         for (int i = 0; i < arr.size() - 1; i++) {
             min = i;
@@ -17,6 +17,7 @@ public class Sort {
                 if (arr.get(j).getPrice() == arr.get(min).getPrice() && arr.get(j).getMemory() < arr.get(min).getMemory()) {
                     min = j;
                 }
+
                 Notebook temp = arr.get(i);
                 arr.set(i, arr.get(min));
                 arr.set(min, temp);

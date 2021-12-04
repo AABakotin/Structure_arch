@@ -7,14 +7,18 @@ public class Notebook {
     private int memory;
     private String name;
     private int price;
-    private final String[] Productname = {"Lenuvo", "Asos", "MacNote", "Eser", "Xamiou"};
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public Notebook() {
         this.memory = (random.nextInt(6) + 1) * 4;
-        this.name = Productname[random.nextInt(Productname.length)];
+        this.name = randomName().name();
         this.price = random.nextInt(26) * 100 + 500;
 
+    }
+
+    private Product randomName() {
+        int rn = new Random().nextInt(Product.values().length);
+        return Product.values()[rn];
     }
 
     public int getMemory() {
@@ -30,8 +34,6 @@ public class Notebook {
     }
 
 
-
-
     public void setMemory(int memory) {
         this.memory = memory;
     }
@@ -43,8 +45,6 @@ public class Notebook {
     public void setPrice(int price) {
         this.price = price;
     }
-
-
 
 
 }
