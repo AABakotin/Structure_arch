@@ -17,6 +17,7 @@ public class Main {
 
     }
 
+
     private static ArrayList<Notebook> createListNotebooks() {
         ArrayList<Notebook> arrayList = new ArrayList<>();
         for (int i = 0; i < NOTEBOOKS_COUNT; i++) {

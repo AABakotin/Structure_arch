@@ -13,6 +13,7 @@ public class Notebook {
         this.price = random.nextInt(26) * 100 + 500;
 
     }
+
     public int getMemory() {
         return memory;
     }
