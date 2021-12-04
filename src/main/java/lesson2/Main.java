@@ -7,6 +7,7 @@ import java.util.List;
 public class Main {
 
 
+
     private static final int NOTEBOOKS_COUNT = 1000;
 
     public static void main(String[] args) {

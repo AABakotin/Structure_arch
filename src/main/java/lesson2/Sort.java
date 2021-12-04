@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Sort {
 
+
     public static List<Notebook> selection (List<Notebook> arr) {
         int min;
         for (int i = 0; i < arr.size() - 1; i++) {

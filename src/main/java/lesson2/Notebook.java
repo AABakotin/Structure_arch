@@ -3,6 +3,7 @@ package lesson2;
 import java.util.Random;
 
 public class Notebook {
+
     private int memory;
     private String name;
     private int price;
