@@ -17,7 +17,6 @@ public class Sort {
                 if (arr.get(j).getPrice() == arr.get(min).getPrice() && arr.get(j).getMemory() < arr.get(min).getMemory()) {
                     min = j;
                 }
-
                 Notebook temp = arr.get(i);
                 arr.set(i, arr.get(min));
                 arr.set(min, temp);
@@ -25,6 +24,4 @@ public class Sort {
         }
         return arr;
     }
-
 }
-
